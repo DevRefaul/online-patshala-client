@@ -13,12 +13,11 @@ const Home = () => {
   //   const notify = () => toast.success("Here is your toast");
 
   const courses = useLoaderData();
-  console.log(courses);
 
   return (
     <>
       <Hero />
-      <TrendingCourses />
+      <TrendingCourses courses={courses} />
       <PopularCategory />
       <AboutElearning />
       <ReviewSlider />
