@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 const TrendingCourses = () => {
   return (
     <div className="bg-slate-50 py-10">
-      <div className=" w-[80%] mx-auto">
+      <div className="w-[90%] md:w-[80%] mx-auto">
         {/* course text */}
         <div className="text-center">
           <p>
