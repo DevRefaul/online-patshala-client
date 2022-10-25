@@ -11,7 +11,12 @@ const ReviewSlider = () => {
 
       <Splide
         aria-label="My Favorite Images"
-        options={{ type: "loop", autoplay: true }}
+        options={{
+          type: "loop",
+          autoplay: true,
+          pagination: false,
+          arrows: false,
+        }}
         className="bg-transparent"
       >
         <SplideSlide>

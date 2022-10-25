@@ -11,10 +11,10 @@ const PopularCategory = () => {
         {/* course text */}
         <div className="text-center">
           <p>
-            <small className="font-semibold">Popular Category</small>
+            <small className="font-semibold text-lg">Popular Skills</small>
           </p>
           <h3 className="text-3xl font-semibold">
-            <span className="text-[#DA0B4E]">Hot & Popular</span> Category for
+            <span className="text-[#DA0B4E]">Hot & Popular</span> Skills to
             Learn
           </h3>
         </div>

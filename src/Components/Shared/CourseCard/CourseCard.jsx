@@ -1,5 +1,4 @@
 import React from "react";
-import { MdDetails } from "react-icons/md";
 import { Link } from "react-router-dom";
 
 const CourseCard = ({ course }) => {
@@ -25,7 +24,12 @@ const CourseCard = ({ course }) => {
           />
         </figure>
         <div className="card-body p-0">
-          <Link>
+          {/* info */}
+          <span className="badge badge-lg text-base bg-[#DA0B4E] text-white py-2 gap-2">
+            Beginner Frienldy
+          </span>
+          {/* info */}
+          <Link to={`/courses/${id}`}>
             <h2 className="card-title hover:text-[#DA0B4E]">{name}</h2>
           </Link>
           <p className="text-base font-medium">{details.slice(0, 100)}...</p>

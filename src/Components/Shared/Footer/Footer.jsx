@@ -30,22 +30,22 @@ const Footer = () => {
               </h3>
               <ul className="space-y-1">
                 <li className=" hover:text-[#DA0B4E]">
-                  <Link rel="noopener noreferrer" to="/webdevelopment">
+                  <Link rel="noopener noreferrer" to="/courses/1">
                     Web Developmnet
                   </Link>
                 </li>
                 <li className=" hover:text-[#DA0B4E]">
-                  <Link rel="noopener noreferrer" to="/digitalmarketing">
+                  <Link rel="noopener noreferrer" to="/courses/4">
                     Digital Marketing
                   </Link>
                 </li>
                 <li className=" hover:text-[#DA0B4E]">
-                  <Link rel="noopener noreferrer" to="/ai">
+                  <Link rel="noopener noreferrer" to="/courses/6">
                     Artificial Intelligence
                   </Link>
                 </li>
                 <li className=" hover:text-[#DA0B4E]">
-                  <Link rel="noopener noreferrer" to="/learnenglish">
+                  <Link rel="noopener noreferrer" to="/courses/10">
                     Learning English
                   </Link>
                 </li>
