@@ -64,7 +64,8 @@ const Login = () => {
     handleLoginUser(email, password)
       .then(() => {
         toast.success("Logged in successfully");
-        navigate(from, { replace: true });
+          navigate(from, { replace: true });
+          
       })
       .catch((err) => toast.error(err.message));
   };

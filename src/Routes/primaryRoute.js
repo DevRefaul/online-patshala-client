@@ -22,28 +22,28 @@ const routes = createBrowserRouter([
         children: [
             {
                 path: '/',
-                loader: () => fetch('http://localhost:5000/main'),
+                loader: () => fetch('https://online-patshala-server.vercel.app/main'),
                 element: <Home />
             },
             {
                 path: '/home',
-                loader: () => fetch('http://localhost:5000/main'),
+                loader: () => fetch('https://online-patshala-server.vercel.app/main'),
                 element: <Home />
             },
             {
                 path: '/courses',
-                loader: () => fetch('http://localhost:5000/courses'),
+                loader: () => fetch('https://online-patshala-server.vercel.app/courses'),
                 element: <MainCoursePage />,
                 children: [
                     {
                         path: '/courses',
-                        loader: () => fetch('http://localhost:5000/courses'),
+                        loader: () => fetch('https://online-patshala-server.vercel.app/courses'),
                         element: <Courses />
                     },
 
                     {
                         path: '/courses/:id',
-                        loader: ({ params }) => fetch(`http://localhost:5000/courses/${params.id}`),
+                        loader: ({ params }) => fetch(`https://online-patshala-server.vercel.app/courses/${params.id}`),
                         element: <SingelCourse />
                     },
                 ]
@@ -70,7 +70,7 @@ const routes = createBrowserRouter([
             },
             {
                 path: '/checkout/:id',
-                loader: ({ params }) => fetch(`http://localhost:5000/checkout/${params.id}`),
+                loader: ({ params }) => fetch(`https://online-patshala-server.vercel.app/checkout/${params.id}`),
                 element: <PrivateRoute><CheckOut /></PrivateRoute>
             },
         ]
