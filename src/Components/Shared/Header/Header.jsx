@@ -29,16 +29,64 @@ const Header = () => {
                 className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52"
               >
                 <li>
-                  <NavLink to="/home">Home</NavLink>
+                  <NavLink
+                    style={({ isActive }) =>
+                      isActive
+                        ? {
+                            color: "#DA0B4E",
+                            background: "#fff",
+                          }
+                        : { color: "#fff", background: "" }
+                    }
+                    to="/home"
+                  >
+                    Home
+                  </NavLink>
                 </li>
                 <li>
-                  <NavLink to="/courses">Courses</NavLink>
+                  <NavLink
+                    style={({ isActive }) =>
+                      isActive
+                        ? {
+                            color: "#DA0B4E",
+                            background: "#fff",
+                          }
+                        : { color: "#fff", background: "" }
+                    }
+                    to="/courses"
+                  >
+                    Courses
+                  </NavLink>
                 </li>
                 <li>
-                  <NavLink to="/faq">Faq</NavLink>
+                  <NavLink
+                    style={({ isActive }) =>
+                      isActive
+                        ? {
+                            color: "#DA0B4E",
+                            background: "#fff",
+                          }
+                        : { color: "#fff", background: "" }
+                    }
+                    to="/faq"
+                  >
+                    Faq
+                  </NavLink>
                 </li>
                 <li>
-                  <NavLink to="/blogs">Blogs</NavLink>
+                  <NavLink
+                    style={({ isActive }) =>
+                      isActive
+                        ? {
+                            color: "#DA0B4E",
+                            background: "#fff",
+                          }
+                        : { color: "#fff", background: "" }
+                    }
+                    to="/blogs"
+                  >
+                    Blogs
+                  </NavLink>
                 </li>
               </ul>
             </div>
@@ -55,16 +103,64 @@ const Header = () => {
           <div className="navbar-center hidden lg:flex">
             <ul className="menu menu-horizontal p-0 text-white font-semibold">
               <li>
-                <NavLink to="/home">Home</NavLink>
+                <NavLink
+                  style={({ isActive }) =>
+                    isActive
+                      ? {
+                          color: "#DA0B4E",
+                          background: "#fff",
+                        }
+                      : { color: "#fff", background: "" }
+                  }
+                  to="/home"
+                >
+                  Home
+                </NavLink>
               </li>
               <li>
-                <NavLink to="/courses">Courses</NavLink>
+                <NavLink
+                  style={({ isActive }) =>
+                    isActive
+                      ? {
+                          color: "#DA0B4E",
+                          background: "#fff",
+                        }
+                      : { color: "#fff", background: "" }
+                  }
+                  to="/courses"
+                >
+                  Courses
+                </NavLink>
               </li>
               <li>
-                <NavLink to="/faq">Faq</NavLink>
+                <NavLink
+                  style={({ isActive }) =>
+                    isActive
+                      ? {
+                          color: "#DA0B4E",
+                          background: "#fff",
+                        }
+                      : { color: "#fff", background: "" }
+                  }
+                  to="/faq"
+                >
+                  Faq
+                </NavLink>
               </li>
               <li>
-                <NavLink to="/blogs">Blogs</NavLink>
+                <NavLink
+                  style={({ isActive }) =>
+                    isActive
+                      ? {
+                          color: "#DA0B4E",
+                          background: "#fff",
+                        }
+                      : { color: "#fff", background: "" }
+                  }
+                  to="/blogs"
+                >
+                  Blogs
+                </NavLink>
               </li>
             </ul>
           </div>
@@ -88,7 +184,7 @@ const Header = () => {
                     </span>
                   </NavLink>
                 </li>
-                <li>
+                <li className="mt-4">
                   <NavLink>Logout</NavLink>
                 </li>
               </ul>
