@@ -1,4 +1,5 @@
 import ErrorPage from "../Components/Shared/Error/ErrorPage";
+import Courses from "../Pages/Courses/Courses";
 import Home from "../Pages/Home/Home";
 
 const { createBrowserRouter } = require("react-router-dom");
@@ -22,7 +23,8 @@ const routes = createBrowserRouter([
             },
             {
                 path: '/courses',
-                element: <Home />
+                loader: () => fetch('http://localhost:5000/courses'),
+                element: <Courses />
             },
             {
                 path: '/courses/:id',

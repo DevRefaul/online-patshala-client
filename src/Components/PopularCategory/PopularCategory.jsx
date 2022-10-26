@@ -4,7 +4,7 @@ import { Splide, SplideSlide } from "@splidejs/react-splide";
 import "./popularcategory.css";
 import { Link } from "react-router-dom";
 
-const PopularCategory = () => {
+const PopularCategory = ({ courses }) => {
   return (
     <div className="bg-white py-10">
       <div className="w-[95%] md:w-[80%] mx-auto">
@@ -31,10 +31,12 @@ const PopularCategory = () => {
                 type: "loop",
                 perPage: 3,
                 perMove: 1,
+                pagination: false,
                 autoplay: true,
                 breakpoints: { 640: { perPage: 1 }, 1024: { perPage: 2 } },
               }}
             >
+              {/* first slide */}
               <SplideSlide>
                 <div className=" p-2 rounded-md md:p-4 mx-1 bg-[#DA0B4E] text-white">
                   <img
@@ -64,7 +66,7 @@ const PopularCategory = () => {
                   <p className="font-bold">Digital Marketing</p>
                 </div>
               </SplideSlide>
-              {/* second slide */}
+              {/* fourth slide */}
               <SplideSlide>
                 <div className="p-2 rounded-md md:p-4 mx-1 bg-[#DA0B4E] text-white">
                   <img
@@ -74,7 +76,7 @@ const PopularCategory = () => {
                   <p className="font-bold">Instagram Marketing</p>
                 </div>
               </SplideSlide>
-              {/* second slide */}
+              {/* fifth slide */}
               <SplideSlide>
                 <div className="p-2 rounded-md md:p-4 mx-1 bg-[#DA0B4E] text-white">
                   <img
@@ -84,7 +86,7 @@ const PopularCategory = () => {
                   <p className="font-bold">Learning English</p>
                 </div>
               </SplideSlide>
-              {/* second slide */}
+              {/* sixth slide */}
               <SplideSlide>
                 <div className="p-2 rounded-md md:p-4 mx-1 bg-[#DA0B4E] text-white">
                   <img
@@ -94,7 +96,7 @@ const PopularCategory = () => {
                   <p className="font-bold">Linkedin Marketing</p>
                 </div>
               </SplideSlide>
-              {/* second slide */}
+              {/* seventh slide */}
               <SplideSlide>
                 <div className="p-2 rounded-md md:p-4 mx-1 bg-[#DA0B4E] text-white">
                   <img
@@ -104,21 +106,21 @@ const PopularCategory = () => {
                   <p className="font-bold">Project Management</p>
                 </div>
               </SplideSlide>
-              {/* second slide */}
+              {/* eighth slide */}
               <SplideSlide>
                 <div className="p-2 rounded-md md:p-4 mx-1 bg-[#DA0B4E] text-white">
                   <img src={require("../../Assets/seo.jpg")} alt="Seo img" />
                   <p className="font-bold">Search Engine Optimization</p>
                 </div>
               </SplideSlide>
-              {/* second slide */}
+              {/* ninth slide */}
               <SplideSlide>
                 <div className="p-2 rounded-md md:p-4 mx-1 bg-[#DA0B4E] text-white">
                   <img src={require("../../Assets/uiux.jpg")} alt="UI/UX img" />
                   <p className="font-bold">UI/UX Design</p>
                 </div>
               </SplideSlide>
-              {/* second slide */}
+              {/* tenthslide */}
               <SplideSlide>
                 <div className="p-2 rounded-md md:p-4 mx-1  bg-[#DA0B4E] text-white">
                   <img
@@ -146,15 +148,3 @@ const PopularCategory = () => {
 };
 
 export default PopularCategory;
-
-/* 
-         browse course button
-
-          <div className="flex justify-center mt-5">
-            <Link to="/courses">
-              <button className="bg-[#DA0B4E] text-white px-4 py-2 font-semibold rounded border-2 border-transparent hover:bg-[white] hover:text-[#DA0B4E] hover:border-[#DA0B4E]">
-                Browse All Courses
-              </button>
-            </Link>
-          </div>
-*/

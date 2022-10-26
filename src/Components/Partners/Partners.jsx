@@ -20,6 +20,7 @@ const Partners = () => {
             type: "loop",
             perPage: 5,
             autoplay: true,
+            perMove: 1,
             arrows: false,
             pagination: false,
             breakpoints: {
