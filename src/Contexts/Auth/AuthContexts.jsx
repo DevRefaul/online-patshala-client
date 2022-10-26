@@ -7,6 +7,7 @@ import {
   GithubAuthProvider,
   GoogleAuthProvider,
   onAuthStateChanged,
+  sendPasswordResetEmail,
   signInWithEmailAndPassword,
   signInWithPopup,
   signOut,
@@ -63,6 +64,11 @@ const AuthContexts = ({ children }) => {
     return signInWithEmailAndPassword(auth, email, password);
   };
 
+  // password reset email
+  const handlePasswordReset = (email) => {
+    return sendPasswordResetEmail(auth, email);
+  };
+
   // log out user
   const handleLogoutUser = () => {
     setLoading(true);
@@ -100,6 +106,7 @@ const AuthContexts = ({ children }) => {
     handleLoginUser,
     handleLogoutUser,
     handleUpdateUserName,
+    handlePasswordReset,
   };
 
   return (

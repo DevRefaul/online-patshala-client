@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { useContext } from "react";
 import toast from "react-hot-toast";
 import { FaGithub, FaFacebook, FaGoogle } from "react-icons/fa";
@@ -12,7 +12,11 @@ const Login = () => {
     handleGithubSignIn,
     handleGoogleSignIn,
     handleLoginUser,
+    handlePasswordReset,
   } = authInfo;
+
+  // email state
+  const [email, setEmail] = useState();
 
   // navigation
   const navigate = useNavigate();
@@ -62,6 +66,17 @@ const Login = () => {
         toast.success("Logged in successfully");
         navigate(from, { replace: true });
       })
+      .catch((err) => toast.error(err.message));
+  };
+
+  // password reset auth
+  const handlePassReset = () => {
+    handlePasswordReset(email)
+      .then(() =>
+        toast.success(
+          "Password reset mail sent to your Email. If not found check the spam folder."
+        )
+      )
       .catch((err) => toast.error(err.message));
   };
 
@@ -125,6 +140,7 @@ const Login = () => {
                 Email address
               </label>
               <input
+                onBlur={(e) => setEmail(e.target.value)}
                 type="email"
                 name="email"
                 id="email"
@@ -138,6 +154,7 @@ const Login = () => {
                   Password
                 </label>
                 <Link
+                  onClick={handlePassReset}
                   rel="noopener noreferrer"
                   className="text-xs hover:underline dark:text-gray-800"
                 >
