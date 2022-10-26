@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 const Header = () => {
   return (
@@ -29,42 +29,42 @@ const Header = () => {
                 className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52"
               >
                 <li>
-                  <Link to="/home">Home</Link>
+                  <NavLink to="/home">Home</NavLink>
                 </li>
                 <li>
-                  <Link to="/courses">Courses</Link>
+                  <NavLink to="/courses">Courses</NavLink>
                 </li>
                 <li>
-                  <Link to="/faq">Faq</Link>
+                  <NavLink to="/faq">Faq</NavLink>
                 </li>
                 <li>
-                  <Link to="/blogs">Blogs</Link>
+                  <NavLink to="/blogs">Blogs</NavLink>
                 </li>
               </ul>
             </div>
             <div className="flex justify-center items-center">
-              <Link className="">
+              <NavLink className="" to="/">
                 <img
                   src={require("../../../Assets/MainLogo.png")}
                   className="w-[200px] max-w-none lg:w-[50%] xl:w-[30%]"
                   alt=""
                 />
-              </Link>
+              </NavLink>
             </div>
           </div>
           <div className="navbar-center hidden lg:flex">
             <ul className="menu menu-horizontal p-0 text-white font-semibold">
               <li>
-                <Link to="/home">Home</Link>
+                <NavLink to="/home">Home</NavLink>
               </li>
               <li>
-                <Link to="/courses">Courses</Link>
+                <NavLink to="/courses">Courses</NavLink>
               </li>
               <li>
-                <Link to="/faq">Faq</Link>
+                <NavLink to="/faq">Faq</NavLink>
               </li>
               <li>
-                <Link to="/blogs">Blogs</Link>
+                <NavLink to="/blogs">Blogs</NavLink>
               </li>
             </ul>
           </div>
@@ -81,27 +81,27 @@ const Header = () => {
                 className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52 font-semibold"
               >
                 <li>
-                  <Link to="/profile" className="justify-between">
+                  <NavLink to="/profile" className="justify-between">
                     Profile
                     <span className="badge bg-[#DA0B4E] border-0 font-semibold">
                       New
                     </span>
-                  </Link>
+                  </NavLink>
                 </li>
                 <li>
-                  <Link>Logout</Link>
+                  <NavLink>Logout</NavLink>
                 </li>
               </ul>
             </div>
             {/* for profile */}
 
             {/* sign in btn */}
-            <Link
+            <NavLink
               to="/login"
               className="bg-white text-[#DA0B4E] border-2 border-purple-00 font-semibold px-4 py-1 hover:border-2 hover:border-white hover:bg-[#DA0B4E] hover:text-white  rounded-md"
             >
               Sign in
-            </Link>
+            </NavLink>
           </div>
         </div>
       </div>

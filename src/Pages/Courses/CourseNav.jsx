@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
 const CourseNav = ({ courses }) => {
   return (
@@ -25,26 +25,34 @@ const CourseNav = ({ courses }) => {
         </label>
         <ul
           tabIndex={0}
-          className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-64 md:w-72"
+          className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-72"
         >
           <div className="border-2 border-[#DA0B4E] h-fit px-2 py-4 rounded-md">
             <h4 className="text-3xl font-semibold border-b-[3px]  pb-4">
               Our Courses
             </h4>
             <div>
-              <ul>
-                <Link to="/courses">
-                  <li className="font-medium text-lg hover:border-b-[1px] hover:border-[#DA0B4E] py-3 hover:text-[#DA0B4E]">
+              <ul className="">
+                <NavLink to="/courses">
+                  <li className="font-medium px-2 text-lg hover:border-b-[1px] hover:border-[#DA0B4E] py-3 hover:text-[#DA0B4E]">
                     All Courses
                   </li>
-                </Link>
-                {courses?.map((course) => (
-                  <Link to={`/courses/${course?.id}`} key={course?.id}>
-                    <li className="font-medium text-lg hover:border-b-[1px] hover:border-[#DA0B4E] py-3 hover:text-[#DA0B4E]">
-                      {course.name}
-                    </li>
-                  </Link>
-                ))}
+                </NavLink>
+                <div className="navbar grid grid-cols-1 p-0">
+                  {courses?.map((course) => (
+                    <NavLink
+                      to={`/courses/${course?.id}`}
+                      key={course?.id}
+                      className={({ isActive }) =>
+                        isActive ? "bg-[#DA0B4E] text-white" : ""
+                      }
+                    >
+                      <li className="font-medium px-2 text-lg hover:border-b-[1px] hover:border-[#DA0B4E] py-3">
+                        {course.name}
+                      </li>
+                    </NavLink>
+                  ))}
+                </div>
               </ul>
             </div>
           </div>
@@ -59,18 +67,25 @@ const CourseNav = ({ courses }) => {
             Our Courses
           </h4>
           <div>
-            <ul>
+            <ul className="navbar grid grid-cols-1">
               <Link to="/courses">
-                <li className="font-medium text-lg hover:border-b-[1px] hover:border-[#DA0B4E] py-3 hover:text-[#DA0B4E]">
+                <li className="font-medium px-2 text-lg hover:border-b-[1px] hover:border-[#DA0B4E] py-3 hover:text-[#DA0B4E]">
                   All Courses
                 </li>
               </Link>
+
               {courses.map((course) => (
-                <Link to={`/courses/${course.id}`} key={course.id}>
-                  <li className="font-medium text-lg hover:border-b-[1px] hover:border-[#DA0B4E] py-3 hover:text-[#DA0B4E]">
+                <NavLink
+                  to={`/courses/${course.id}`}
+                  key={course.id}
+                  className={({ isActive }) =>
+                    isActive ? "bg-[#DA0B4E] text-white rounded-sm" : ""
+                  }
+                >
+                  <li className="font-medium px-2 rounded-sm text-lg hover:border-b-[1px] hover:border-[#DA0B4E] py-3 ">
                     {course.name}
                   </li>
-                </Link>
+                </NavLink>
               ))}
             </ul>
           </div>

@@ -1,7 +1,13 @@
 import ErrorPage from "../Components/Shared/Error/ErrorPage";
+import Blogs from "../Pages/Blogs/Blogs";
+import CheckOut from "../Pages/CheckOut/CheckOut";
 import Courses from "../Pages/Courses/Courses";
 import MainCoursePage from "../Pages/Courses/MainCoursePage";
+import FAQPage from "../Pages/FAQ/FAQPage";
 import Home from "../Pages/Home/Home";
+import Login from "../Pages/Login/Login";
+import Profile from "../Pages/Profile/Profile";
+import Register from "../Pages/Register/Register";
 import SingelCourse from "../Pages/SingelCourse/SingelCourse";
 
 const { createBrowserRouter } = require("react-router-dom");
@@ -43,23 +49,28 @@ const routes = createBrowserRouter([
             },
             {
                 path: '/faq',
-                element: <Home />
+                element: <FAQPage />
             },
             {
                 path: '/blogs',
-                element: <Home />
+                element: <Blogs />
             },
             {
                 path: '/login',
-                element: <Home />
+                element: <Login />
             },
             {
                 path: '/register',
-                element: <Home />
+                element: <Register />
             },
             {
                 path: '/profile',
-                element: <Home />
+                element: <Profile />
+            },
+            {
+                path: '/checkout/:id',
+                loader: ({ params }) => fetch(`http://localhost:5000/checkout/${params.id}`),
+                element: <CheckOut />
             },
         ]
     }
