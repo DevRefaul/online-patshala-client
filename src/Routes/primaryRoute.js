@@ -1,6 +1,8 @@
 import ErrorPage from "../Components/Shared/Error/ErrorPage";
 import Courses from "../Pages/Courses/Courses";
+import MainCoursePage from "../Pages/Courses/MainCoursePage";
 import Home from "../Pages/Home/Home";
+import SingelCourse from "../Pages/SingelCourse/SingelCourse";
 
 const { createBrowserRouter } = require("react-router-dom");
 const { default: Root } = require("../Root/Root");
@@ -24,11 +26,20 @@ const routes = createBrowserRouter([
             {
                 path: '/courses',
                 loader: () => fetch('http://localhost:5000/courses'),
-                element: <Courses />
-            },
-            {
-                path: '/courses/:id',
-                element: <Home />
+                element: <MainCoursePage />,
+                children: [
+                    {
+                        path: '/courses',
+                        loader: () => fetch('http://localhost:5000/courses'),
+                        element: <Courses />
+                    },
+
+                    {
+                        path: '/courses/:id',
+                        loader: ({ params }) => fetch(`http://localhost:5000/courses/${params.id}`),
+                        element: <SingelCourse />
+                    },
+                ]
             },
             {
                 path: '/faq',

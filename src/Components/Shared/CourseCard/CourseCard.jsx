@@ -2,7 +2,6 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 const CourseCard = ({ course }) => {
-  console.log(course);
   const {
     id,
     name,
@@ -18,7 +17,7 @@ const CourseCard = ({ course }) => {
       <div className="card card-compact h-full w-full bg-base-100 shadow-xl p-0 rounded-md">
         <figure>
           <img
-            className="md:h-52 lg:h-44 xl:h-60 2xl:h-72 w-full object-cover"
+            className="md:h-52 lg:h-44 xl:h-48 2xl:h-52 w-full object-cover"
             src={courseImage}
             alt="Shoes"
           />
