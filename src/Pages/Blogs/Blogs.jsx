@@ -1,10 +1,6 @@
 import React from "react";
-import { useContext } from "react";
-import { AuthContext } from "../../Contexts/Auth/AuthContexts";
 
 const Blogs = () => {
-  const contextData = useContext(AuthContext);
-
   return (
     <div className="w-[90%] md:w-[80%] mx-auto py-8">
       <h2 className="text-3xl font-bold text-[#DA0B4E] text-center border-b-2 border-[#DA0B4E] py-4 ">
