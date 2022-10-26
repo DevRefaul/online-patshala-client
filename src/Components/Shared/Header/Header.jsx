@@ -1,7 +1,12 @@
 import React from "react";
+import { useContext } from "react";
 import { NavLink } from "react-router-dom";
+import { AuthContext } from "../../../Contexts/Auth/AuthContexts";
 
 const Header = () => {
+  const authInfo = useContext(AuthContext);
+  const { user, handleLogoutUser } = authInfo;
+
   return (
     <div className="bg-[#dc255fe8]">
       <div className="w-[80%] mx-auto">
@@ -93,7 +98,7 @@ const Header = () => {
             <div className="flex justify-center items-center">
               <NavLink className="" to="/">
                 <img
-                  src={require("../../../Assets/MainLogo.png")}
+                  src="https://i.ibb.co/p0Zf0sm/MainLogo.png"
                   className="w-[200px] max-w-none lg:w-[50%] xl:w-[30%]"
                   alt=""
                 />
@@ -165,39 +170,49 @@ const Header = () => {
             </ul>
           </div>
           <div className="navbar-end hidden md:flex">
-            {/* for profile */}
-            <div className="dropdown dropdown-end">
-              <label tabIndex={0} className="btn btn-ghost btn-circle avatar">
-                <div className="w-10 rounded-full">
-                  <img src="https://placeimg.com/80/80/people" alt="" />
+            {user ? (
+              <>
+                <div className="text-white font-bold">{user?.displayName}</div>
+                {/* for profile */}
+                <div className="dropdown dropdown-end">
+                  <label
+                    tabIndex={0}
+                    className="btn btn-ghost btn-circle avatar"
+                  >
+                    <div className="w-10 rounded-full border-2 border-white">
+                      <img src={user?.photoURL} alt="" />
+                    </div>
+                  </label>
+                  <ul
+                    tabIndex={0}
+                    className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52 font-semibold"
+                  >
+                    <li>
+                      <NavLink to="/profile" className="justify-between">
+                        Profile
+                        <span className="badge bg-[#DA0B4E] border-0 font-semibold">
+                          New
+                        </span>
+                      </NavLink>
+                    </li>
+                    <li className="mt-4" onClick={() => handleLogoutUser()}>
+                      <NavLink>Logout</NavLink>
+                    </li>
+                  </ul>
                 </div>
-              </label>
-              <ul
-                tabIndex={0}
-                className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52 font-semibold"
-              >
-                <li>
-                  <NavLink to="/profile" className="justify-between">
-                    Profile
-                    <span className="badge bg-[#DA0B4E] border-0 font-semibold">
-                      New
-                    </span>
-                  </NavLink>
-                </li>
-                <li className="mt-4">
-                  <NavLink>Logout</NavLink>
-                </li>
-              </ul>
-            </div>
-            {/* for profile */}
-
-            {/* sign in btn */}
-            <NavLink
-              to="/login"
-              className="bg-white text-[#DA0B4E] border-2 border-purple-00 font-semibold px-4 py-1 hover:border-2 hover:border-white hover:bg-[#DA0B4E] hover:text-white  rounded-md"
-            >
-              Sign in
-            </NavLink>
+                {/* for profile */}
+              </>
+            ) : (
+              <>
+                <NavLink
+                  to="/login"
+                  className="bg-white text-[#DA0B4E] border-2 border-purple-00 font-semibold px-4 py-1 hover:border-2 hover:border-white hover:bg-[#DA0B4E] hover:text-white  rounded-md"
+                >
+                  Sign in
+                </NavLink>
+                {/* sign in btn */}
+              </>
+            )}
           </div>
         </div>
       </div>

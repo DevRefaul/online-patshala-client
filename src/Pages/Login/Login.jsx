@@ -1,8 +1,70 @@
 import React from "react";
+import { useContext } from "react";
+import toast from "react-hot-toast";
 import { FaGithub, FaFacebook, FaGoogle } from "react-icons/fa";
-import { Link } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
+import { AuthContext } from "../../Contexts/Auth/AuthContexts";
 
 const Login = () => {
+  const authInfo = useContext(AuthContext);
+  const {
+    handleFacebookSignIn,
+    handleGithubSignIn,
+    handleGoogleSignIn,
+    handleLoginUser,
+  } = authInfo;
+
+  // navigation
+  const navigate = useNavigate();
+
+  // getting location
+  const location = useLocation();
+  const from = location?.state?.from?.pathname || "/";
+
+  // google sign in
+  const googleSignin = () => {
+    handleGoogleSignIn()
+      .then(() => {
+        toast.success("Logged in successfully");
+        navigate(from, { replace: true });
+      })
+      .catch((err) => toast.error(err.message));
+  };
+  // facebook sign in
+  const facebookSignin = () => {
+    handleFacebookSignIn()
+      .then(() => {
+        toast.success("Logged in successfully");
+        navigate(from, { replace: true });
+      })
+      .catch((err) => toast.error(err.message));
+  };
+  // github sign in
+  const githubSignin = () => {
+    handleGithubSignIn()
+      .then(() => {
+        toast.success("Logged in successfully");
+        navigate(from, { replace: true });
+      })
+      .catch((err) => toast.error(err.message));
+  };
+
+  // gmail pass login
+  const userLogin = (e) => {
+    e.preventDefault();
+    const form = e.target;
+    const email = form.email.value;
+    const password = form.password.value;
+    form.reset();
+
+    handleLoginUser(email, password)
+      .then(() => {
+        toast.success("Logged in successfully");
+        navigate(from, { replace: true });
+      })
+      .catch((err) => toast.error(err.message));
+  };
+
   return (
     <div className="flex justify-center items-center py-20 px-2">
       <div className="w-full max-w-md p-4 rounded-md sm:p-8 dark:text-gray-700 dark:bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-gray-200 to-gray-200 shadow-xl">
@@ -21,6 +83,7 @@ const Login = () => {
         </p>
         <div className="my-6 space-y-4">
           <button
+            onClick={googleSignin}
             aria-label="Login with Google"
             type="button"
             className="flex items-center justify-center w-full p-4 space-x-4 border rounded-md focus:ring-2 focus:ring-offset-1 dark:border-gray-800 focus:ring-violet-400"
@@ -29,6 +92,7 @@ const Login = () => {
             <p>Continue with Google</p>
           </button>
           <button
+            onClick={githubSignin}
             aria-label="Login with GitHub"
             className="flex items-center justify-center w-full p-4 space-x-4 border rounded-md focus:ring-2 focus:ring-offset-1 dark:border-gray-800 focus:ring-violet-400"
           >
@@ -36,6 +100,7 @@ const Login = () => {
             <p>Continue with GitHub</p>
           </button>
           <button
+            onClick={facebookSignin}
             aria-label="Login with Twitter"
             className="flex items-center justify-center w-full p-4 space-x-4 border rounded-md focus:ring-2 focus:ring-offset-1 dark:border-gray-800 focus:ring-violet-400"
           >
@@ -49,6 +114,7 @@ const Login = () => {
           <hr className="w-full dark:text-white" />
         </div>
         <form
+          onSubmit={userLogin}
           noValidate=""
           action=""
           className="space-y-8 ng-untouched ng-pristine ng-valid"
@@ -88,7 +154,7 @@ const Login = () => {
             </div>
           </div>
           <button
-            type="button"
+            type="submit"
             className="w-full px-8 py-3 font-semibold rounded-md dark:bg-[#DF396D] dark:text-white hover:bg-white hover:text-[#DF396D] border-2 hover:border-[#DF396D]"
           >
             Sign in

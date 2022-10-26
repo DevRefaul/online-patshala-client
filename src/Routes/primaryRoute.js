@@ -9,6 +9,7 @@ import Login from "../Pages/Login/Login";
 import Profile from "../Pages/Profile/Profile";
 import Register from "../Pages/Register/Register";
 import SingelCourse from "../Pages/SingelCourse/SingelCourse";
+import PrivateRoute from "./PrivateRoute";
 
 const { createBrowserRouter } = require("react-router-dom");
 const { default: Root } = require("../Root/Root");
@@ -70,7 +71,7 @@ const routes = createBrowserRouter([
             {
                 path: '/checkout/:id',
                 loader: ({ params }) => fetch(`http://localhost:5000/checkout/${params.id}`),
-                element: <CheckOut />
+                element: <PrivateRoute><CheckOut /></PrivateRoute>
             },
         ]
     }
