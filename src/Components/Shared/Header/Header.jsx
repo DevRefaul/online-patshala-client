@@ -75,7 +75,7 @@ const Header = () => {
                     }
                     to="/faq"
                   >
-                    Faq
+                    FAQ
                   </NavLink>
                 </li>
                 <li>
@@ -99,7 +99,7 @@ const Header = () => {
               <NavLink className="" to="/">
                 <img
                   src="https://i.ibb.co/p0Zf0sm/MainLogo.png"
-                  className="w-[200px] max-w-none lg:w-[50%] xl:w-[30%]"
+                  className="w-[200px] max-w-none lg:w-[50%] xl:w-[40%]"
                   alt=""
                 />
               </NavLink>
@@ -149,7 +149,7 @@ const Header = () => {
                   }
                   to="/faq"
                 >
-                  Faq
+                  FAQ
                 </NavLink>
               </li>
               <li>

@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 const Footer = () => {
   return (
     <div>
-      <footer className="px-4 divide-y dark:bg-gray-700 dark:text-gray-100">
+      <footer className="px-4 divide-y bg-gray-700 text-gray-100">
         <div className="container flex flex-col justify-between py-10 mx-auto space-y-8 lg:flex-row lg:space-y-0">
           <div className="lg:w-1/3">
             {/* footer logo start */}
@@ -25,7 +25,7 @@ const Footer = () => {
           <div className="grid grid-cols-2 text-sm gap-x-3 gap-y-8 lg:w-2/3 sm:grid-cols-4">
             <div className="space-y-3">
               {/* courses nav start */}
-              <h3 className="tracking-wide uppercase dark:text-gray-50 font-bold">
+              <h3 className="tracking-wide uppercase text-gray-50 font-bold">
                 Courses
               </h3>
               <ul className="space-y-1">
@@ -54,7 +54,7 @@ const Footer = () => {
             </div>
             {/* navigations start */}
             <div className="space-y-3">
-              <h3 className="tracking-wide uppercase dark:text-gray-50 font-bold">
+              <h3 className="tracking-wide uppercase text-gray-50 font-bold">
                 Navigations
               </h3>
               <ul className="space-y-1">
@@ -83,7 +83,7 @@ const Footer = () => {
             {/* navigations end */}
             {/* download apps section start */}
             <div className="space-y-3">
-              <h3 className="uppercase dark:text-gray-50 font-bold">
+              <h3 className="uppercase text-gray-50 font-bold">
                 Download Our Apps
               </h3>
               <Link to="/" className="fles justify-start">
@@ -99,7 +99,7 @@ const Footer = () => {
 
             {/* social media start */}
             <div className="space-y-3">
-              <div className="uppercase dark:text-gray-50 font-semibold">
+              <div className="uppercase text-gray-50 font-semibold">
                 Social media
               </div>
               <div className="flex justify-start space-x-3">
@@ -152,7 +152,7 @@ const Footer = () => {
             {/* social media end */}
           </div>
         </div>
-        <div className="py-6 text-sm text-center dark:text-gray-400">
+        <div className="py-6 text-sm text-center text-gray-400">
           © Developer{" "}
           <span className="text-lg font-bold text-[#DA0B4E] mx-2">
             Refaul Islam.

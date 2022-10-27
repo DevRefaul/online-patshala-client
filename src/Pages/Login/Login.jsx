@@ -83,11 +83,11 @@ const Login = () => {
 
   return (
     <div className="flex justify-center items-center py-20 px-2">
-      <div className="w-full max-w-md p-4 rounded-md sm:p-8 dark:text-gray-700 dark:bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-gray-200 to-gray-200 shadow-xl">
+      <div className="w-full max-w-md p-4 rounded-md sm:p-8 text-gray-700 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-gray-200 to-gray-200 shadow-xl">
         <h2 className="mb-3 text-3xl font-semibold text-center">
           Login to your account
         </h2>
-        <p className="text-sm text-center dark:text-gray-800">
+        <p className="text-sm text-center text-gray-800">
           Dont have account?
           <Link
             to="/register"
@@ -102,7 +102,7 @@ const Login = () => {
             onClick={googleSignin}
             aria-label="Login with Google"
             type="button"
-            className="flex items-center justify-center w-full p-4 space-x-4 border rounded-md focus:ring-2 focus:ring-offset-1 dark:border-gray-800 focus:ring-violet-400"
+            className="flex items-center justify-center w-full p-4 space-x-4 border rounded-md focus:ring-2 focus:ring-offset-1 border-gray-800 focus:ring-violet-400"
           >
             <FaGoogle></FaGoogle>
             <p>Continue with Google</p>
@@ -110,7 +110,7 @@ const Login = () => {
           <button
             onClick={githubSignin}
             aria-label="Login with GitHub"
-            className="flex items-center justify-center w-full p-4 space-x-4 border rounded-md focus:ring-2 focus:ring-offset-1 dark:border-gray-800 focus:ring-violet-400"
+            className="flex items-center justify-center w-full p-4 space-x-4 border rounded-md focus:ring-2 focus:ring-offset-1 border-gray-800 focus:ring-violet-400"
           >
             <FaGithub />
             <p>Continue with GitHub</p>
@@ -118,16 +118,16 @@ const Login = () => {
           <button
             onClick={facebookSignin}
             aria-label="Login with Twitter"
-            className="flex items-center justify-center w-full p-4 space-x-4 border rounded-md focus:ring-2 focus:ring-offset-1 dark:border-gray-800 focus:ring-violet-400"
+            className="flex items-center justify-center w-full p-4 space-x-4 border rounded-md focus:ring-2 focus:ring-offset-1 border-gray-800 focus:ring-violet-400"
           >
             <FaFacebook />
             <p>Continue with Facebook</p>
           </button>
         </div>
         <div className="flex items-center w-full my-4">
-          <hr className="w-full dark:text-white" />
-          <p className="px-3 dark:text-gray-800 font-bold">OR</p>
-          <hr className="w-full dark:text-white" />
+          <hr className="w-full text-white" />
+          <p className="px-3 text-gray-800 font-bold">OR</p>
+          <hr className="w-full text-white" />
         </div>
         <form
           onSubmit={userLogin}
@@ -146,7 +146,7 @@ const Login = () => {
                 name="email"
                 id="email"
                 placeholder="yourmail@gmail.com"
-                className="w-full px-3 py-2 border rounded-md dark:border-gray-700 dark:bg-gray-900 dark:text-gray-100 focus:dark:border-violet-400"
+                className="w-full px-3 py-2 border rounded-md border-gray-700 bg-gray-900 text-gray-100 focus:border-violet-400"
               />
             </div>
             <div className="space-y-2">
@@ -157,7 +157,7 @@ const Login = () => {
                 <Link
                   onClick={handlePassReset}
                   rel="noopener noreferrer"
-                  className="text-xs hover:underline dark:text-gray-800"
+                  className="text-xs hover:underline text-gray-800"
                 >
                   Forgot password?
                 </Link>
@@ -167,13 +167,13 @@ const Login = () => {
                 name="password"
                 id="password"
                 placeholder="*****"
-                className="w-full px-3 py-2 border rounded-md dark:border-gray-700 dark:bg-gray-900 dark:text-gray-100 focus:dark:border-violet-400"
+                className="w-full px-3 py-2 border rounded-md border-gray-700 bg-gray-900 text-gray-100 focus:border-violet-400"
               />
             </div>
           </div>
           <button
             type="submit"
-            className="w-full px-8 py-3 font-semibold rounded-md dark:bg-[#DF396D] dark:text-white hover:bg-white hover:text-[#DF396D] border-2 hover:border-[#DF396D]"
+            className="w-full px-8 py-3 font-semibold rounded-md bg-[#DF396D] text-white hover:bg-white hover:text-[#DF396D] border-2 hover:border-[#DF396D]"
           >
             Sign in
           </button>
