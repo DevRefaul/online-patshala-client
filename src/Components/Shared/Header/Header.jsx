@@ -10,7 +10,7 @@ const Header = () => {
   return (
     <div className="bg-[#dc255fe8]">
       <div className="w-[80%] mx-auto">
-        <div className="navbar py-1">
+        <div className="navbar p-0">
           <div className="navbar-start">
             <div className="dropdown">
               <label tabIndex={0} className="btn btn-ghost lg:hidden">
@@ -99,7 +99,7 @@ const Header = () => {
               <NavLink className="" to="/">
                 <img
                   src="https://i.ibb.co/p0Zf0sm/MainLogo.png"
-                  className="w-[200px] max-w-none lg:w-[70%] xl:w-[50%]"
+                  className="w-[200px] max-w-none lg:w-[70%] xl:w-[50%] 2xl:w-[40%]"
                   alt=""
                 />
               </NavLink>
