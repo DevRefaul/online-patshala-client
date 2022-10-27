@@ -6,7 +6,6 @@ export const downloadPDF = (
   courseImage,
   toalVideos,
   price,
-  details
 ) => {
   const doc = new jsPDF("p", "mm", "a4");
 

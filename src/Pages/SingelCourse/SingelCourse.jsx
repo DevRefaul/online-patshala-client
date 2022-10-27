@@ -21,7 +21,7 @@ const SingelCourse = () => {
   } = courseInfo;
 
   const handlePDFDownload = () => {
-    downloadPDF(name, tutor, courseImage, price, details, toalVideos);
+    downloadPDF(name, tutor, courseImage, price, toalVideos);
   };
 
   return (
