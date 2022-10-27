@@ -1,6 +1,7 @@
 import React from "react";
 import { MdPictureAsPdf, MdEco, MdStarBorderPurple500 } from "react-icons/md";
 import { Link, useLoaderData } from "react-router-dom";
+import { downloadPDF } from "../../Components/Shared/PDF/DownloadPDF";
 import MilestoneCollapseCard from "./MilestoneCollapseCard";
 const SingelCourse = () => {
   const courseInfo = useLoaderData();
@@ -18,13 +19,18 @@ const SingelCourse = () => {
     tutor,
     tutorImage,
   } = courseInfo;
+
+  const handlePDFDownload = () => {
+    downloadPDF(name, tutor, courseImage, price, details, toalVideos);
+  };
+
   return (
     <div>
       <div className="w-[95%] mx-auto border-[1px] border-[#DA0B4E] rounded-md">
         {/* course heading start */}
         <div className="border-b-[1px] border-[#DA0B4E] py-2 mb-4 flex justify-between items-center">
           <h2 className="text-2xl font-bold ml-2">Course Title: {name}</h2>
-          <span>
+          <span onClick={handlePDFDownload} className="cursor-pointer">
             <MdPictureAsPdf className="text-4xl mr-2" />
           </span>
         </div>

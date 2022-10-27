@@ -1,70 +1,44 @@
-# Getting Started with Create React App
+# Website Name : Online Patshala
+Live website Link : https://online-patshala.web.app
+# Features :
+# Authentication
+* Signin user
+* Register new user
+* Logout user
+* Password Reset
+* Updating Profile
+* Login with Google, Facebook, Github accounts
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Sliders
+* Courses images slider with splider.js
 
-## Available Scripts
+# Courses
+* There are 4 courses on home page and 9 courses in main courses page
 
-In the project directory, you can run:
+# Reviews
+* A slider of reviews using splider.js is used in Home page
 
-### `npm start`
+# Newsletter
+* There is a newsletter section in the bottom of the home page before footer
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+# Complex footer
+* A complex footer is beign used in the bottom of the page . It inclued some navigation of courses and main menus. There is also a logo and social icons
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+# FAQ page
+* A FAQ page is being implemented and for the users for basic questions
 
-### `npm test`
+# Blogs
+* A blog page is there for some blogs
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+# Partners
+* Some of our partners images are added before Newsletter section
 
-### `npm run build`
+# List of Frameworks and Libraries used in this Website
+* For main website React is being used
+* react-router-dom is used for navigation
+* React icons is used for icons
+* Images are hosted in imgbb.com
+* For css librarie used Tailwind css and for component librarie daisyUi is beign used
+* For Authentication and Hosting Firebase is used
+* For Server side hosting vercel.com is used
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
