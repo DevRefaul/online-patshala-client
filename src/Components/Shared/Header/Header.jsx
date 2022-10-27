@@ -1,6 +1,6 @@
 import React from "react";
 import { useContext } from "react";
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import { AuthContext } from "../../../Contexts/Auth/AuthContexts";
 
 const Header = () => {
@@ -99,7 +99,7 @@ const Header = () => {
               <NavLink className="" to="/">
                 <img
                   src="https://i.ibb.co/p0Zf0sm/MainLogo.png"
-                  className="w-[200px] max-w-none lg:w-[50%] xl:w-[40%]"
+                  className="w-[200px] max-w-none lg:w-[70%] xl:w-[50%]"
                   alt=""
                 />
               </NavLink>
@@ -196,7 +196,7 @@ const Header = () => {
                       </NavLink>
                     </li>
                     <li className="mt-4" onClick={() => handleLogoutUser()}>
-                      <NavLink>Logout</NavLink>
+                      <Link className=" border-2 border-[#DA0B4E]">Logout</Link>
                     </li>
                   </ul>
                 </div>

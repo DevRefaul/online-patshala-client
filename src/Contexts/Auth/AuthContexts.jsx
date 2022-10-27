@@ -2,6 +2,7 @@ import React, { useEffect } from "react";
 import { createContext } from "react";
 import {
   createUserWithEmailAndPassword,
+  deleteUser,
   FacebookAuthProvider,
   getAuth,
   GithubAuthProvider,
@@ -84,6 +85,11 @@ const AuthContexts = ({ children }) => {
     });
   };
 
+  // delete user
+  const handleDeleteUser = () => {
+    return deleteUser(auth.currentUser);
+  };
+
   // onAuthStateChanged for checking user
   useEffect(() => {
     const unsubscribe = onAuthStateChanged(auth, (currentUser) => {
@@ -107,6 +113,7 @@ const AuthContexts = ({ children }) => {
     handleLogoutUser,
     handleUpdateUserName,
     handlePasswordReset,
+    handleDeleteUser,
   };
 
   return (
