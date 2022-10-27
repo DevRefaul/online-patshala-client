@@ -37,8 +37,12 @@ Live website Link : https://online-patshala.web.app
 * For main website React is being used
 * react-router-dom is used for navigation
 * React icons is used for icons
-* Images are hosted in imgbb.com
+* splider.js is used for all sliders
+* for pdf download _jspdf_  is used
 * For css librarie used Tailwind css and for component librarie daisyUi is beign used
+
+# Hosting
 * For Authentication and Hosting Firebase is used
 * For Server side hosting vercel.com is used
+* Images are hosted in imgbb.com
 
