@@ -179,8 +179,20 @@ const Header = () => {
                     tabIndex={0}
                     className="btn btn-ghost btn-circle avatar"
                   >
-                    <div className="w-10 rounded-full border-2 border-white">
-                      <img src={user?.photoURL} alt="" />
+                    <div
+                      className="w-10 rounded-full border-2 border-white"
+                      data-tip={user?.displayName}
+                    >
+                      <img
+                        src={
+                          user
+                            ? user?.photoURL
+                            : "https://i.ibb.co/9NC0frF/download.png"
+                        }
+                        alt=""
+                        className=""
+                        title={user?.displayName}
+                      />
                     </div>
                   </label>
                   <ul

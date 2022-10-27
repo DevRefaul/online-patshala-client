@@ -21,6 +21,7 @@ const NewsLetter = () => {
         <h2 className="text-white text-3xl font-semibold text-center">
           Subscribe to our Newsletter !
         </h2>
+
         <p className="text-center text-white font-medium">
           for exiting offers and discounts
         </p>
