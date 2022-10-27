@@ -7,7 +7,7 @@ const MilestoneCollapseCard = ({ milestone }) => {
     <>
       <div
         tabIndex={0}
-        className="collapse collapse-plus border border-[#DA0B4E] bg-base-100 rounded-md my-3"
+        className="collapse collapse-arrow border border-[#DA0B4E] bg-base-100 rounded-md my-3"
       >
         <div>
           <div className="collapse-title text-xl font-medium flex items-center justify-between">
