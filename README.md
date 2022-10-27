@@ -34,15 +34,15 @@ Live website Link : https://online-patshala.web.app
 * Some of our partners images are added before Newsletter section
 
 # List of Frameworks and Libraries used in this Website
-* For main website React is being used
-* react-router-dom is used for navigation
-* React icons is used for icons
-* splider.js is used for all sliders
-* for pdf download _jspdf_  is used
-* For css librarie used Tailwind css and for component librarie daisyUi is beign used
+* For main website **React** is being used
+* **react-router-dom** is used for navigation
+* **React icons** is used for icons
+* **splider.js** is used for all sliders
+* for pdf download **jspdf**  is used
+* For css librarie used **Tailwind** css and for component librarie **daisyUi** is beign used
 
 # Hosting
-* For Authentication and Hosting Firebase is used
-* For Server side hosting vercel.com is used
-* Images are hosted in imgbb.com
+* For Authentication and Hosting **Firebase** is used
+* For Server side hosting **vercel.com** is used
+* Images are hosted in **imgbb.com**
 
