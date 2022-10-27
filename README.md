@@ -1,6 +1,6 @@
 # Website Name : Online Patshala
 Live website Link : https://online-patshala.web.app
-# Features :
+# Features : Features are written below
 # Authentication
 * Signin user
 * Register new user
