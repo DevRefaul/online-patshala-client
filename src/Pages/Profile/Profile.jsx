@@ -96,13 +96,17 @@ const Profile = () => {
       </div>
       {/* delete account */}
       <div className="border-t-2 border-[#DA0B4E] mt-10 py-5">
-        <h2 className="text-3xl font-bold">Delete Your Account</h2>
-        <button
-          onClick={handleDeleteAccount}
-          className="bg-[#DA0B4E] border-2 border-transparent text-white px-6 py-2 rounded-md hover:bg-white hover:text-[#d71553] hover:border-2 hover:border-[#DA0B4E] mt-4"
-        >
-          Delete Account
-        </button>
+        <h2 className="text-3xl font-bold text-center my-4">
+          Want To Delete Your Account ?
+        </h2>
+        <div className="flex justify-center items-center">
+          <button
+            onClick={handleDeleteAccount}
+            className="bg-[#DA0B4E] border-2 border-transparent text-white px-6 py-2 rounded-md hover:bg-white hover:text-[#d71553] hover:border-2 hover:border-[#DA0B4E] mt-4"
+          >
+            Delete Account
+          </button>
+        </div>
       </div>
     </div>
   );
