@@ -8,7 +8,7 @@ const Header = () => {
   const { user, handleLogoutUser } = authInfo;
 
   return (
-    <div className="bg-[#dc255fe8]">
+    <div className="bg-[#e1205de8]">
       <div className="w-[80%] mx-auto">
         <div className="navbar p-0">
           <div className="navbar-start">
