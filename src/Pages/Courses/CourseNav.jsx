@@ -34,7 +34,7 @@ const CourseNav = ({ courses }) => {
             <div>
               <ul className="">
                 <NavLink to="/courses">
-                  <li className="font-medium px-2 text-lg hover:border-b-[1px] hover:border-[#DA0B4E] py-3 hover:text-[#DA0B4E]">
+                  <li className="font-medium px-2 text-lg hover:border-b-[1px] hover:border-[#DA0B4E] py-3 hover:text-[#d71553]">
                     All Courses
                   </li>
                 </NavLink>
@@ -69,7 +69,7 @@ const CourseNav = ({ courses }) => {
           <div>
             <ul className="navbar grid grid-cols-1">
               <Link to="/courses">
-                <li className="font-medium px-2 text-lg hover:border-b-[1px] hover:border-[#DA0B4E] py-3 hover:text-[#DA0B4E]">
+                <li className="font-medium px-2 text-lg hover:border-b-[1px] hover:border-[#DA0B4E] py-3 hover:text-[#d71553]">
                   All Courses
                 </li>
               </Link>

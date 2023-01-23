@@ -9,7 +9,7 @@ const Hero = () => {
     <div className="grid grid-cols-1 md:grid-cols-2 justify-center items-center w-[80%] mx-auto py-8">
       <div>
         <p className="text-base md:text-lg font-semibold">Welcome to the</p>
-        <h2 className="text-3xl xl:text-6xl font-bold text-[#DA0B4E] pb-4">
+        <h2 className="text-3xl xl:text-6xl font-bold text-[#d71553] pb-4">
           Online Patshala
         </h2>
         <p className="text-lg font-semibold lg:w-[70%]">
@@ -18,10 +18,10 @@ const Hero = () => {
           learning and give you the best support even after the course ends.
         </p>
         <Link to="/courses" className="">
-          <button className="bg-[#DA0B4E] text-white font-semibold w-40 px-2 py-1 border-2 border-transparent rounded mt-4 flex justify-between items-center hover:text-[#DA0B4E] hover:bg-white hover:border-[#DA0B4E]">
+          <button className="bg-[#DA0B4E] text-white font-semibold w-40 px-2 py-1 border-2 border-transparent rounded mt-4 flex justify-between items-center hover:text-[#d71553] hover:bg-white hover:border-[#DA0B4E]">
             Enroll now{" "}
             <span>
-              <MdOutlineArrowRightAlt className="text-2xl w-8 ml-3 h-full bg-white text-[#DA0B4E] rounded-sm border-2 border-[#DA0B4E]" />
+              <MdOutlineArrowRightAlt className="text-2xl w-8 ml-3 h-full bg-white text-[#d71553] rounded-sm border-2 border-[#DA0B4E]" />
             </span>
           </button>
         </Link>

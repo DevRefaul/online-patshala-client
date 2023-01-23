@@ -29,22 +29,22 @@ const Footer = () => {
                 Courses
               </h3>
               <ul className="space-y-1">
-                <li className=" hover:text-[#DA0B4E]">
+                <li className=" hover:text-[#d71553]">
                   <Link rel="noopener noreferrer" to="/courses/1">
                     Web Developmnet
                   </Link>
                 </li>
-                <li className=" hover:text-[#DA0B4E]">
+                <li className=" hover:text-[#d71553]">
                   <Link rel="noopener noreferrer" to="/courses/4">
                     Digital Marketing
                   </Link>
                 </li>
-                <li className=" hover:text-[#DA0B4E]">
+                <li className=" hover:text-[#d71553]">
                   <Link rel="noopener noreferrer" to="/courses/6">
                     Artificial Intelligence
                   </Link>
                 </li>
-                <li className=" hover:text-[#DA0B4E]">
+                <li className=" hover:text-[#d71553]">
                   <Link rel="noopener noreferrer" to="/courses/10">
                     Learning English
                   </Link>
@@ -58,22 +58,22 @@ const Footer = () => {
                 Navigations
               </h3>
               <ul className="space-y-1">
-                <li className=" hover:text-[#DA0B4E]">
+                <li className=" hover:text-[#d71553]">
                   <Link rel="noopener noreferrer" to="/">
                     Home
                   </Link>
                 </li>
-                <li className=" hover:text-[#DA0B4E]">
+                <li className=" hover:text-[#d71553]">
                   <Link rel="noopener noreferrer" to="/courses">
                     Courses
                   </Link>
                 </li>
-                <li className=" hover:text-[#DA0B4E]">
+                <li className=" hover:text-[#d71553]">
                   <Link rel="noopener noreferrer" to="/faq">
                     FAQ
                   </Link>
                 </li>
-                <li className=" hover:text-[#DA0B4E]">
+                <li className=" hover:text-[#d71553]">
                   <Link rel="noopener noreferrer" to="/blogs">
                     Blogs
                   </Link>
@@ -154,7 +154,7 @@ const Footer = () => {
         </div>
         <div className="py-6 text-sm text-center text-gray-400">
           © Developer{" "}
-          <span className="text-lg font-bold text-[#DA0B4E] mx-2">
+          <span className="text-lg font-bold text-[#d71553] mx-2">
             Refaul Islam.
           </span>
           All rights reserved.

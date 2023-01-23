@@ -76,7 +76,7 @@ const SingelCourse = () => {
             </h6>
             <p className="flex items-center text-lg">
               Ratings : <span className="font-bold ml-2">{ratings}</span>{" "}
-              <MdStarBorderPurple500 className="text-[#DA0B4E] font-bold" />
+              <MdStarBorderPurple500 className="text-[#d71553] font-bold" />
             </p>
             <p className="flex items-center text-lg">
               Total Students :{" "}
@@ -115,14 +115,14 @@ const SingelCourse = () => {
                 <MdEco className="text-xl text-lime-600" />
               </span>{" "}
               Price:{" "}
-              <span className="text-[#DA0B4E] text-3xl ml-2">{price}</span>$
+              <span className="text-[#d71553] text-3xl ml-2">{price}</span>$
             </h6>
           </div>
 
           {/* enroll btn */}
           <div className="mt-3">
             <Link to={`/checkout/${id}`}>
-              <button className="border-2 border-[#DA0B4E] px-4 py-2 text-[#DA0B4E] rounded-md font-semibold hover:text-white hover:bg-[#DA0B4E] ">
+              <button className="border-2 border-[#DA0B4E] px-4 py-2 text-[#d71553] rounded-md font-semibold hover:text-white hover:bg-[#DA0B4E] ">
                 Get Premium Access
               </button>
             </Link>

@@ -218,7 +218,7 @@ const Header = () => {
               <>
                 <NavLink
                   to="/login"
-                  className="bg-white text-[#DA0B4E] border-2 border-purple-00 font-semibold px-4 py-1 hover:border-2 hover:border-white hover:bg-[#DA0B4E] hover:text-white  rounded-md"
+                  className="bg-white text-[#d71553] border-2 border-purple-00 font-semibold px-4 py-1 hover:border-2 hover:border-white hover:bg-[#DA0B4E] hover:text-white  rounded-md"
                 >
                   Sign in
                 </NavLink>

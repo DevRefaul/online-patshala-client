@@ -33,10 +33,10 @@ const Profile = () => {
 
   return (
     <div className="w-[90%] md:w-[80%] mx-auto py-10">
-      <h2 className="text-4xl font-bold text-[#DA0B4E] text-center my-6">
+      <h2 className="text-4xl font-bold text-[#d71553] text-center my-6">
         Welcome to your Profile Page
       </h2>
-      <h4 className="text-xl font-bold text-[#DA0B4E] text-center ">
+      <h4 className="text-xl font-bold text-[#d71553] text-center ">
         Hello {displayName}
       </h4>
       <div className="flex justify-center items-center">
@@ -88,7 +88,7 @@ const Profile = () => {
           </div>
           <button
             type="submit"
-            className="bg-[#DA0B4E] border-2 border-transparent text-white px-6 py-2 rounded-md hover:bg-white hover:text-[#DA0B4E] hover:border-2 hover:border-[#DA0B4E] mt-4"
+            className="bg-[#DA0B4E] border-2 border-transparent text-white px-6 py-2 rounded-md hover:bg-white hover:text-[#d71553] hover:border-2 hover:border-[#DA0B4E] mt-4"
           >
             Update
           </button>
@@ -99,7 +99,7 @@ const Profile = () => {
         <h2 className="text-3xl font-bold">Delete Your Account</h2>
         <button
           onClick={handleDeleteAccount}
-          className="bg-[#DA0B4E] border-2 border-transparent text-white px-6 py-2 rounded-md hover:bg-white hover:text-[#DA0B4E] hover:border-2 hover:border-[#DA0B4E] mt-4"
+          className="bg-[#DA0B4E] border-2 border-transparent text-white px-6 py-2 rounded-md hover:bg-white hover:text-[#d71553] hover:border-2 hover:border-[#DA0B4E] mt-4"
         >
           Delete Account
         </button>

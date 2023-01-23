@@ -14,7 +14,7 @@ const PopularCategory = ({ courses }) => {
             <small className="font-semibold text-lg">Popular Skills</small>
           </p>
           <h3 className="text-3xl font-semibold">
-            <span className="text-[#DA0B4E]">Hot & Popular</span> Skills to
+            <span className="text-[#d71553]">Hot & Popular</span> Skills to
             Learn
           </h3>
         </div>
@@ -136,7 +136,7 @@ const PopularCategory = ({ courses }) => {
           {/* enroll btn */}
           <div className="flex justify-center mt-4">
             <Link to="/courses">
-              <button className="bg-[#DA0B4E] px-6 py-2 font-bold border-2 border-transparent hover:border-[#DA0B4E] text-white rounded hover:bg-white hover:text-[#DA0B4E]">
+              <button className="bg-[#DA0B4E] px-6 py-2 font-bold border-2 border-transparent hover:border-[#DA0B4E] text-white rounded hover:bg-white hover:text-[#d71553]">
                 Enroll Now
               </button>
             </Link>

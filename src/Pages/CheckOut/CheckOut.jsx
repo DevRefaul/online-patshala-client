@@ -40,7 +40,7 @@ const CheckOut = () => {
           <div className="flex justify-center items-center px-8 my-4">
             <button
               onClick={handleBuyBtn}
-              className="bg-white text-[#DA0B4E] rounded-md border-2 border-[#DA0B4E] px-6 py-2 hover:bg-[#DA0B4E] hover:text-white "
+              className="bg-white text-[#d71553] rounded-md border-2 border-[#DA0B4E] px-6 py-2 hover:bg-[#DA0B4E] hover:text-white "
             >
               Buy Premium Access
             </button>

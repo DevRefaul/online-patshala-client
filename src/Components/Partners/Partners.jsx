@@ -6,7 +6,7 @@ const Partners = () => {
     <div className="py-20">
       <div>
         <h2 className="text-center  text-3xl font-semibold">
-          <span className="text-[#DA0B4E]">Trusted</span> by the Professionals
+          <span className="text-[#d71553]">Trusted</span> by the Professionals
           <br />
           World wide
         </h2>

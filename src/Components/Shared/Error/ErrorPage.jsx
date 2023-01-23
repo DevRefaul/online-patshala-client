@@ -15,7 +15,7 @@ const ErrorPage = () => {
         <p className="my-3 text-xl font-semibold">{statusText}</p>
         <p className="font-medium">An unknown error occured</p>
         <Link to="/">
-          <button className="bg-[#DA0B4E] px-6 py-2 text-white rounded-md mt-8 font-semibold hover:bg-[#FBE6ED] hover:text-[#DA0B4E] shadow-lg">
+          <button className="bg-[#DA0B4E] px-6 py-2 text-white rounded-md mt-8 font-semibold hover:bg-[#FBE6ED] hover:text-[#d71553] shadow-lg">
             Go Back To Home Page
           </button>
         </Link>

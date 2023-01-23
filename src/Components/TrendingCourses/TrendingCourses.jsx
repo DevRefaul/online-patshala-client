@@ -12,7 +12,7 @@ const TrendingCourses = ({ courses }) => {
             <small className="font-semibold">New & Trending</small>
           </p>
           <h3 className="text-3xl font-semibold">
-            <span className="text-[#DA0B4E]">Featured Courses</span> By Our
+            <span className="text-[#d71553]">Featured Courses</span> By Our
             Professional <br /> Instructors
           </h3>
         </div>
@@ -29,7 +29,7 @@ const TrendingCourses = ({ courses }) => {
 
           <div className="flex justify-center mt-5">
             <Link to="/courses">
-              <button className="bg-[#DA0B4E] text-white px-4 py-2 font-semibold rounded border-2 border-transparent hover:bg-[white] hover:text-[#DA0B4E] hover:border-[#DA0B4E]">
+              <button className="bg-[#DA0B4E] text-white px-4 py-2 font-semibold rounded border-2 border-transparent hover:bg-[white] hover:text-[#d71553] hover:border-[#DA0B4E]">
                 Browse All Courses
               </button>
             </Link>

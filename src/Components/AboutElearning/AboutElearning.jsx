@@ -17,7 +17,7 @@ const AboutElearning = () => {
         <div>
           <h2 className="text-xl font-semibold">
             About our E-Learning Platform <br />{" "}
-            <span className="text-[#DA0B4E] text-5xl font-bold ml-4 leading-relaxed flex items-center">
+            <span className="text-[#d71553] text-5xl font-bold ml-4 leading-relaxed flex items-center">
               <MdArrowRightAlt /> Online Pathsala
             </span>
           </h2>
@@ -46,7 +46,7 @@ const AboutElearning = () => {
 
             <div className="flex justify-start mt-4">
               <Link to="/courses">
-                <button className="bg-[#DA0B4E] px-6 py-2 font-bold border-2 border-transparent hover:border-[#DA0B4E] text-white rounded hover:bg-white hover:text-[#DA0B4E]">
+                <button className="bg-[#DA0B4E] px-6 py-2 font-bold border-2 border-transparent hover:border-[#DA0B4E] text-white rounded hover:bg-white hover:text-[#d71553]">
                   Enroll Now
                 </button>
               </Link>

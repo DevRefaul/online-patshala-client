@@ -29,13 +29,13 @@ const CourseCard = ({ course }) => {
           </span>
           {/* info */}
           <Link to={`/courses/${id}`}>
-            <h2 className="card-title hover:text-[#DA0B4E]">{name}</h2>
+            <h2 className="card-title hover:text-[#d71553]">{name}</h2>
           </Link>
           <p className="text-base font-medium">{details.slice(0, 100)}...</p>
           <p className="text-lg font-medium">Total Videos: {toalVideos}</p>
           <h2 className="text-lg font-medium">
             Course Fee :{" "}
-            <span className="text-xl font-bold text-[#DA0B4E]">{price}</span>$
+            <span className="text-xl font-bold text-[#d71553]">{price}</span>$
           </h2>
           <div className="card-actions justify-between items-center border-t-2 border-slate-200 pt-2">
             <div className="flex justify-start items-center">
@@ -47,7 +47,7 @@ const CourseCard = ({ course }) => {
               <p className="font-semibold ml-3">{tutor}</p>
             </div>
             <Link to={`/courses/${id}`}>
-              <button className="bg-[#DA0B4E] px-4 py-2 rounded border-2 border-transparent text-white font-bold hover:bg-white hover:text-[#DA0B4E] hover:border-[#DA0B4E]">
+              <button className="bg-[#DA0B4E] px-4 py-2 rounded border-2 border-transparent text-white font-bold hover:bg-white hover:text-[#d71553] hover:border-[#DA0B4E]">
                 See Details
               </button>
             </Link>
