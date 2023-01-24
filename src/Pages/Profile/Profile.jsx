@@ -43,7 +43,7 @@ const Profile = () => {
         <img
           src={photoURL}
           alt=""
-          className="w-28 border-2 border-gray-500 p-2"
+          className="w-28 h-28 rounded-full border-2 border-gray-500 p-2"
         />
       </div>
       <div className="my-4">
