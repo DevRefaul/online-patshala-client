@@ -52,7 +52,7 @@ const Profile = () => {
           <div className="grid gap-x-2 gap-y-6 grid-cols-1 md:grid-cols-2 bg-rose-50 p-8">
             {/* name  */}
             <div>
-              <label htmlFor="name">Name</label>
+              <label htmlFor="name">Name :</label>
               <input
                 className="w-full lg:w-[80%] xl:w-[60%] block rounded px-2 py-2 outline-none focus:outline-1 focus:outline-[#DA0B4E]"
                 type="text"
@@ -63,7 +63,7 @@ const Profile = () => {
             </div>
             {/* email */}
             <div>
-              <label htmlFor="name">Email</label>
+              <label htmlFor="name">Email :</label>
               <input
                 className="w-full lg:w-[80%] xl:w-[60%] block rounded px-2 py-2 outline-none bg-[#DA0B4E] text-white"
                 type="email"
@@ -76,7 +76,7 @@ const Profile = () => {
             </div>
             {/* image url */}
             <div>
-              <label htmlFor="name">Image URL:</label>
+              <label htmlFor="name">Image URL :</label>
               <input
                 className="w-full lg:w-[80%] xl:w-[60%] block rounded px-2 py-2 outline-none focus:outline-1 focus:outline-[#DA0B4E]"
                 type="text"
